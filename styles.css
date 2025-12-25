@@ -947,3 +947,58 @@ html {
         grid-template-columns: 1fr;
     }
 }
+/* Clickable Project Cards */
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.project-card:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+    color: #667eea;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-link i {
+    font-size: 1rem;
+}
+
+/* Enhanced hover effects for clickable cards */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.1);
+}
+
+.project-card .project-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Cursor pointer for all project cards */
+.project-card {
+    cursor: pointer;
+}
