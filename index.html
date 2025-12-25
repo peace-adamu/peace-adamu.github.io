@@ -1,495 +1,1099 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adamu Peace - AI Engineer & Data Scientist</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>Adamu Peace</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi! I'm Adamu Peace
-                </h1>
-                <p class="hero-subtitle">
-                    AI Engineer | Data Scientist | Chemical Engineer
-                </p>
-                <p class="hero-description">
-                    Designing multi-agent AI systems and transforming raw data into actionable insights. 
-                    Specialized in predictive maintenance, automation workflows, and machine learning solutions 
-                    with proven track record of driving innovation and community impact.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-image-container">
-                    <img src="./profile-picture.jpg" alt="Adamu Peace - AI Engineer" class="profile-image">
-                    <div class="profile-border"></div>
-                </div>
-                <div class="floating-cards-container">
-                    <div class="floating-card">
-                        <i class="fas fa-robot"></i>
-                        <span>AI Engineering</span>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Data Science</span>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-flask"></i>
-                        <span>Chemical Engineering</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm an AI Engineer and data scientist with a strong foundation in chemical engineering. 
-                        Currently working at Ziti Academy, I specialize in designing multi-agent AI systems, 
-                        building automation workflows, and creating predictive maintenance solutions using Azure AI Foundry.
-                    </p>
-                    <p>
-                        With experience spanning from community development to enterprise solutions, I'm passionate 
-                        about leveraging technology to solve real-world problems and bridge the digital divide. 
-                        My work has directly contributed to improving business processes, enhancing community digital 
-                        literacy, and driving innovation in AI applications.
-                    </p>
-                    <div class="download-cv">
-                        <a href="https://drive.google.com/uc?export=download&id=1XpsskqhDNLtAq8Bn0m2fYBZ3eqx-hezw" class="btn btn-outline" target="_blank" download="Adamu_Peace_Resume.pdf">
-                            <i class="fas fa-download"></i>
-                            Download My CV
-                        </a>
-                    </div>
-                </div>
-                <div class="about-cards">
-                    <div class="card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Education & Certifications</h3>
-                        <ul>
-                            <li>B.ENG Chemical Engineering - Federal University of Petroleum Resources (4.18 GPA)</li>
-                            <li>AI Engineering - Ziti Academy</li>
-                            <li>Data Science - 3MTT & Alt_School Africa</li>
-                            <li>ML/AI - Digital SkillUp Africa</li>
-                            <li>Data Analysis - Udacity & Ladies in Tech Africa</li>
-                            <li>Career Essentials in Generative AI - Microsoft & LinkedIn</li>
-                            <li>Software Development - Power Learn Project Academy</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <!-- Experience Section -->
-    <section class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Sep 2025 - Dec 2025</div>
-                    <div class="timeline-content">
-                        <h3>AI Engineer</h3>
-                        <h4>Ziti Academy</h4>
-                        <ul>
-                            <li>Designed multi-agent AI system for milling machine predictive maintenance using Azure AI Foundry</li>
-                            <li>Built automated weekly sales reporting workflow with n8n, delivering insights via Slack and email</li>
-                            <li>Developed bank reconciliation chatbot with Power Automate integration</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">Nov 2024 - Nov 2025</div>
-                    <div class="timeline-content">
-                        <h3>Head of Hackathon | Digital Literacy Trainer</h3>
-                        <h4>Digital Literacy For All & Mind_The Gap - Yobe State</h4>
-                        <ul>
-                            <li>Led hackathon initiatives driving innovation and collaboration in community development</li>
-                            <li>Designed workshops focusing on Generative AI for Digital Literacy and Medical Health groups</li>
-                            <li>Delivered digital education programs across multiple schools, bridging the digital divide</li>
-                        </ul>
-                    </div>
-                </div>
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
 
-                <div class="timeline-item">
-                    <div class="timeline-date">May 2024 - Oct 2024</div>
-                    <div class="timeline-content">
-                        <h3>Data Analyst Intern</h3>
-                        <h4>Venture Tribes - Lagos</h4>
-                        <ul>
-                            <li>Improved data collection efficiency across 3+ departments using Google Forms</li>
-                            <li>Analyzed datasets with Excel and SQL, contributing to 15% boost in digital engagement</li>
-                            <li>Reduced report preparation time by 40% through standardized templates</li>
-                        </ul>
-                    </div>
-                </div>
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-                <div class="timeline-item">
-                    <div class="timeline-date">May 2024 - Oct 2024</div>
-                    <div class="timeline-content">
-                        <h3>Data Analyst</h3>
-                        <h4>Ladies in Tech Africa - Lagos</h4>
-                        <ul>
-                            <li>Conducted salary analytics for 100+ staff using Excel and SQL</li>
-                            <li>Designed Power BI dashboards for HR metrics and sales KPIs</li>
-                            <li>Improved customer retention by 12% through churn analysis</li>
-                        </ul>
-                    </div>
-                </div>
+.nav-logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Aug 2015 - Dec 2022</div>
-                    <div class="timeline-content">
-                        <h3>Sales Manager</h3>
-                        <h4>Johncent Global Allied Product Nigeria - Niger State</h4>
-                        <ul>
-                            <li>Progressed from Sales Representative to Production Manager</li>
-                            <li>Boosted productivity by 20% and sales by 15% in chemical segments</li>
-                            <li>Secured 30+ repeat customers and expanded into new industry segments</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
 
-    <!-- Interests Section -->
-    <section class="interests">
-        <div class="container">
-            <h2 class="section-title">My Interests</h2>
-            <div class="interests-grid">
-                <div class="interest-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>AI Engineering</h3>
-                    <p>Building multi-agent systems and intelligent automation</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Data Science</h3>
-                    <p>Turning raw data into actionable insights</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Predictive Maintenance</h3>
-                    <p>Developing smart industry solutions</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fas fa-industry"></i>
-                    <h3>Process Simulation</h3>
-                    <p>Optimizing chemical engineering operations</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Machine Learning</h3>
-                    <p>Building predictive models and solving complex problems</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Software Development</h3>
-                    <p>Creating scalable applications and automation workflows</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <a href="https://github.com/peace-adamu/Ziti-Academy---Capstone-Project" target="_blank" class="project-card featured">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Automated Sales Reporting</h3>
-                    <p>This project automates the process of collecting, analyzing, and reporting key business KPIs from multiple data sources using n8n, eliminating manual work and providing decision-makers with weekly insights.</p>
-                    <div class="project-tags">
-                        <span class="tag">n8n</span>
-                        <span class="tag">Automation</span>
-                        <span class="tag">Analytics</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
 
-                <a href="https://github.com/peace-adamu/APWEN-Hackathon.git" target="_blank" class="project-card featured">
-                    <div class="project-icon">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <h3>Milling Machine Failure Detection</h3>
-                    <p>Smart industry ML solution for predictive maintenance using advanced machine learning algorithms</p>
-                    <div class="project-tags">
-                        <span class="tag">IoT</span>
-                        <span class="tag">Industry 4.0</span>
-                        <span class="tag">ML</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.nav-link:hover {
+    color: #667eea;
+}
 
-                <a href="https://github.com/peace-adamu/Spam-Email-Detection" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Spam Email Detection App</h3>
-                    <p>NLP-based spam classifier using machine learning algorithms</p>
-                    <div class="project-tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">ML</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+}
 
-                <a href="https://github.com/peace-adamu/DSA-Project---Stroke-Prediction" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Stroke Prediction App</h3>
-                    <p>Predicts stroke risk using ML with high accuracy prediction models</p>
-                    <div class="project-tags">
-                        <span class="tag">Healthcare</span>
-                        <span class="tag">ML</span>
-                        <span class="tag">Prediction</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.nav-link:hover::after {
+    width: 100%;
+}
 
-                <a href="https://github.com/peace-adamu/Diabetes_Web_App.git" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Diabetes Web App</h3>
-                    <p>ML-powered health prediction tool for diabetes risk assessment</p>
-                    <div class="project-tags">
-                        <span class="tag">Healthcare</span>
-                        <span class="tag">Web App</span>
-                        <span class="tag">ML</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
-                <a href="https://github.com/peace-adamu/KYPHOSIS-PREDICTION-APP" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-x-ray"></i>
-                    </div>
-                    <h3>Kyphosis Detection System</h3>
-                    <p>Streamlit-based diagnostic tool for spinal condition detection</p>
-                    <div class="project-tags">
-                        <span class="tag">Streamlit</span>
-                        <span class="tag">Medical</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
 
-                <a href="https://github.com/peace-adamu/LITA-Project-Sales-Performance-Analysis-for-a-Retail-Store.git" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <h3>Sales Performance Analysis</h3>
-                    <p>Insights using Excel, SQL, Power BI for comprehensive retail store analysis</p>
-                    <div class="project-tags">
-                        <span class="tag">Excel</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Power BI</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    overflow: hidden;
+}
 
-                <a href="https://github.com/peace-adamu/LITA-Project-Customer-Subscription-Analysis.git" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Customer Subscription Analysis</h3>
-                    <p>Retention and behavior insights from customer subscription data</p>
-                    <div class="project-tags">
-                        <span class="tag">Analytics</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Customer Insights</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23667eea" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23764ba2" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
 
-                <a href="https://github.com/peace-adamu/SocialNetworkAdv-Prediction-Application" target="_blank" class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3>Social Network Ads Predictor</h3>
-                    <p>ML model for ad conversion prediction and social media analytics</p>
-                    <div class="project-tags">
-                        <span class="tag">ML</span>
-                        <span class="tag">Marketing</span>
-                        <span class="tag">Prediction</span>
-                    </div>
-                    <div class="project-link">
-                        <i class="fab fa-github"></i>
-                        <span>View on GitHub</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
 
-    <!-- Awards Section -->
-    <section class="awards">
-        <div class="container">
-            <h2 class="section-title">Awards & Recognition</h2>
-            <div class="awards-grid">
-                <div class="award-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Best Innovation Award</h3>
-                    <p>Association of Professional Women in Engineering Nigeria, UniLag</p>
-                    <span class="award-date">April 2025</span>
-                </div>
-                <div class="award-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>3MTT Certificate of Completion</h3>
-                    <p>3MTT Scholarship Program</p>
-                    <span class="award-date">Dec 2023 - Mar 2024</span>
-                </div>
-                <div class="award-card">
-                    <i class="fas fa-medal"></i>
-                    <h3>NYSC Certificate of Completion</h3>
-                    <p>National Youth Service Corps</p>
-                    <span class="award-date">Nov 2024 - Nov 2025</span>
-                </div>
-            </div>
-        </div>
-    </section>
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
 
-    <!-- Hackathons Section -->
-    <section class="hackathons">
-        <div class="container">
-            <h2 class="section-title">Hackathons & Competitions</h2>
-            <div class="hackathon-grid">
-                <div class="hackathon-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Power Learn Project</h3>
-                    <p>Portfolio Website & Social Justice Hackathon</p>
-                </div>
-                <div class="hackathon-card">
-                    <i class="fas fa-award"></i>
-                    <h3>APWEN Hackathon</h3>
-                    <p>Milling Machine Failure Detection App</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>09069668265</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>peacejoadamu@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>peace-adamu-34576b23a</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Adamu Peace. All rights reserved.</p>
-            <div class="social-links">
-                <a href="mailto:peacejoadamu@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/peace-adamu-34576b23a"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
+.hero-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Hero Image/Animation */
+.hero-image {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-cards-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.floating-card {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: float 6s ease-in-out infinite;
+    min-width: 140px;
+    justify-content: center;
+}
+
+.floating-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.floating-card:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.floating-card:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.floating-card i {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.floating-card span {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.85rem;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Section Styles */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 0;
+    background: white;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.download-cv {
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+/* Interests Section */
+.interests {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.interest-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.interest-card i {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.interest-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.interest-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 0;
+    background: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.project-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Hackathons Section */
+.hackathons {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hackathon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.hackathon-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hackathon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hackathon-card i {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+}
+
+.hackathon-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hackathon-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 0;
+    background: white;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 40px;
+}
+
+.contact-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+.contact-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hackathon-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+/* Experience Section */
+.experience {
+    padding: 5rem 0;
+    background: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    top: 15px;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -10px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background: white;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.timeline-content h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-content li {
+    padding: 0.3rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.timeline-content li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Awards Section */
+.awards {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.award-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.award-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.award-card i {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.award-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.award-date {
+    font-size: 0.9rem;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Featured Project Cards */
+.project-card.featured {
+    border: 2px solid #667eea;
+    position: relative;
+}
+
+.project-card.featured::before {
+    content: 'FEATURED';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* Mobile Responsive for Timeline */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 21px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 21px;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Clickable Project Cards */
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.project-card:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+    color: #667eea;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-link i {
+    font-size: 1rem;
+}
+
+/* Enhanced hover effects for clickable cards */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.1);
+}
+
+.project-card .project-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Cursor pointer for all project cards */
+.project-card {
+    cursor: pointer;
+}
+/* Profile Image Styles */
+.profile-image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 1rem;
+    z-index: 2;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.profile-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 1;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile responsive for profile image */
+@media (max-width: 768px) {
+    .profile-image-container {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+    
+    .floating-cards-container {
+        gap: 0.5rem;
+    }
+    
+    .floating-card {
+        padding: 0.8rem 1.2rem;
+        min-width: 120px;
+    }
+    
+    .floating-card span {
+        font-size: 0.8rem;
+    }
+    
+    .floating-card i {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .floating-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .floating-card {
+        min-width: 140px;
+    }
+}
